@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+{% extends "success.html" %}
+{% import "bootstrap/form.html" as wtf %}
+<html>
+<head>
+	{% block title %}<title>Secrets</title>{% endblock %}
+</head>
+<body>
+<div class="jumbotron">
+	<div class="container">
+		{% block content %}
+			<h1>Welcome</h1>
+			<p>Are you ready to discover my secret?</p>
+			<form action=" {{ url_for('login') }} ">
+				<button class="button btn btn-primary btn-lg" >Login</button>
+			</form>
+		{% endblock %}
+	</div>
+</div>
+</body>
+</html>
